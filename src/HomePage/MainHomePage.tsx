@@ -8,7 +8,6 @@ function MainHomePage() {
 
     return (
       <div id='MainPage'>
-        <NavBar/>
         <ShortAppInfo/>
         
         <a href='' id='MainPageA1'>Zaloguj się</a>
