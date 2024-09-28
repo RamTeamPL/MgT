@@ -1,0 +1,39 @@
+nav main {
+    width: 60vw;
+    height: 3em;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    background-color: #333333;
+}
+
+nav main img {
+    height: 100%;
+    float:left;
+    display: inline;
+    width: 20%;
+}
+
+nav main #buttons {
+    height: 100%;
+    float:right;
+    display: inline-flex;
+    width: 80%;
+}
+
+nav main #buttons a {
+    flex:1;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav main #buttons a:hover {
+    border-bottom: 2px solid red;
+    margin-bottom: -2px;
+    animation-name: button_highlight;
+    animation-duration: 0.75s;
+}
+
+@keyframes button_highlight {
+    from {border-bottom-color: #FF000000;}
+    to {border-bottom-color: red;}
+}

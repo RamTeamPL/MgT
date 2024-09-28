@@ -1,10 +1,33 @@
 import './NavBarCSS.css';
-function NavBarCSS() {
-  
 
+function Button({href}) {
+    return (
+        <>
+            <a href={href}>Test</a>
+        </>
+    )
+}
+
+function Logo() {
+    return (
+        <img src='MgTai.png' />
+    );
+}
+
+function NavBarCSS() {
     return (
       <>
-        
+        <nav>
+            <main>
+                <Logo />
+                <div id="buttons">
+                    <Button href="patrykduda.com"/>
+                    <Button href="patrykduda.com"/>
+                    <Button href="patrykduda.com"/>
+                    <Button href="patrykduda.com"/>
+                </div>
+            </main>
+        </nav>
       </>
     )
   }
