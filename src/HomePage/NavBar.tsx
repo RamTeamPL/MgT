@@ -23,11 +23,11 @@ function NavBar({setPage}) {
             <main>
                 <Logo />
                 <div id="buttons">
-                    <NavButton setPage={setPage} page={0} name={"My quizzes"} />
-                    <NavButton setPage={setPage} page={0} name={"Made by others"}/>
-                    <NavButton setPage={setPage} page={0} name={"My results"}/>
+                    <NavButton setPage={setPage} page={Page.None} name={"My quizzes"} />
+                    <NavButton setPage={setPage} page={Page.None} name={"Made by others"}/>
+                    <NavButton setPage={setPage} page={Page.None} name={"My results"}/>
                     <NavButton setPage={setPage} page={Page.Templates} name={"Create new quiz"}/>
-                    <NavButton setPage={setPage} page={Page.AccountPage} name={"Prices"}/>
+                    <NavButton setPage={setPage} page={Page.None} name={"Prices"}/>
                 </div>
             </main>
         </nav>
