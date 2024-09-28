@@ -1,14 +1,14 @@
 import './NavBarCSS.css';
 
-function Button() {
+function Button({href}) {
     return (
         <>
-            <a href="patrykduda.com">Test</a>
+            <a href={href}>Test</a>
         </>
     )
 }
 
-function Image() {
+function Logo() {
     return (
         <img src='krzak_trollface.png' />
     );
@@ -19,9 +19,12 @@ function NavBarCSS() {
       <>
         <nav>
             <main>
+                <Logo />
                 <div id="buttons">
-                    <Button />
-                    <Button />
+                    <Button href="patrykduda.com"/>
+                    <Button href="patrykduda.com"/>
+                    <Button href="patrykduda.com"/>
+                    <Button href="patrykduda.com"/>
                 </div>
             </main>
         </nav>
