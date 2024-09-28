@@ -6,6 +6,15 @@ function Logo() {
     );
 }
 
+function NavButton({link, name}) {
+    return (
+        <div class="navbutton">
+            <a href={link}>{name}</a>
+            <div class="podkreslenie"></div>
+        </div>
+    )
+}
+
 function NavBar() {
     return (
       <>
@@ -13,11 +22,11 @@ function NavBar() {
             <main>
                 <Logo />
                 <div id="buttons">
-                    <a href="patrykduda.com">My quizzes</a>
-                    <a href="patrykduda.com">Made by others</a>
-                    <a href="patrykduda.com">My results</a>
-                    <a href="patrykduda.com">Create new quiz</a>
-                    <a href="patrykduda.com">Buy premium</a>
+                    <NavButton link={"https://patrykduda.com"} name={"My quizzes"} />
+                    <NavButton link={"https://patrykduda.com"} name={"Made by others"}/>
+                    <NavButton link={"https://patrykduda.com"} name={"My results"}/>
+                    <NavButton link={"https://patrykduda.com"} name={"Create new quiz"}/>
+                    <NavButton link={"https://patrykduda.com"} name={"Buy premium"}/>
                 </div>
             </main>
         </nav>
