@@ -1,13 +1,13 @@
 
 import './App.css'
-import NavBarCSS from './HomePage/NavBar'
+import NavBar from './HomePage/NavBar'
 
 function App() {
   
 
   return (
     <>
-        <NavBarCSS />
+        <NavBar />
     </>
   )
 }

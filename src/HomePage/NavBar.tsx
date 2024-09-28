@@ -1,12 +1,5 @@
-import './NavBarCSS.css';
+import './NavBar.css';
 
-function Button({href}) {
-    return (
-        <>
-            <a href={href}>Test</a>
-        </>
-    )
-}
 
 function Logo() {
     return (
@@ -14,17 +7,18 @@ function Logo() {
     );
 }
 
-function NavBarCSS() {
+function NavBar() {
     return (
       <>
         <nav>
             <main>
                 <Logo />
                 <div id="buttons">
-                    <Button href="patrykduda.com"/>
-                    <Button href="patrykduda.com"/>
-                    <Button href="patrykduda.com"/>
-                    <Button href="patrykduda.com"/>
+                    <a href="patrykduda.com">My templates</a>
+                    <a href="patrykduda.com">My results</a>
+                    <a href="patrykduda.com">Users templates</a>
+                    <a href="patrykduda.com">Create new template</a>
+                    <a href="patrykduda.com">Create new template</a>
                 </div>
             </main>
         </nav>
@@ -32,4 +26,4 @@ function NavBarCSS() {
     )
   }
   
-  export default NavBarCSS
+  export default NavBar

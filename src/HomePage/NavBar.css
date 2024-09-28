@@ -1,20 +1,24 @@
 nav main {
-    width: 60vw;
-    height: 3em;
-    margin-right: 20vw;
-    margin-left: 20vw;
+    height: auto;
+    margin-top: 2vw;
     background-color: #333333;
+    border-radius: 10px;
+    min-width: 1020px;
+    width: 50%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 
 nav main img {
-    height: 100%;
-    float:left;
+    height: 4em;
     display: inline;
-    width: 20%;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
 }
 
 nav main #buttons {
-    height: 100%;
+    height: 4em;
     float:right;
     display: inline-flex;
     width: 80%;
@@ -25,6 +29,9 @@ nav main #buttons a {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav main #buttons a:hover {
     border-bottom: 2px solid red;
