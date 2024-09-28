@@ -19,7 +19,7 @@ function PasswordInput() {
 }
 
 
-function AccountPage() {
+function AccountPage({setLogged}) {
     return (
       <>
         <div id="loginpage">
@@ -33,7 +33,7 @@ function AccountPage() {
 
             <LoginInput /><br/>
             <PasswordInput/><br />
-            <button id = "login">Login</button>
+            <button onClick={() => {setLogged(true)}} id = "login">Login</button>
 
         </div>
       </>
