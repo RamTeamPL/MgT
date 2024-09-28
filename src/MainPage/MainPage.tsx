@@ -6,6 +6,7 @@ import NavBar from "../HomePage/NavBar"
 import Kontakt from "../HomePage/Kontakt";
 import Templates from "../Template/Templates";
 import MyQuizzes from "../MyQuizzes/MyQuizzes";
+import Pricing from "../Pricing/Pricing";
 
 export enum Page {
     None = 404,
@@ -13,6 +14,7 @@ export enum Page {
     AccountPage,
     Templates,
     MyQuizzes,
+    Pricing,
 }
 
 function NoPage() {
@@ -39,7 +41,8 @@ function MainPage() {
                     0: <MainHomePage setPage={setPage}/>,
                     1: <AccountPage setLogged={setLogged}/>,
                     2: <Templates />,
-                    3: <MyQuizzes />
+                    3: <MyQuizzes />,
+                    4: <Pricing />,
                 }[page]
             }
             <Kontakt />
