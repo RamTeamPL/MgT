@@ -19,7 +19,7 @@ function Templates()
                         <h4 className='config1'>Configuration:</h4>
                         <p className='config'>
                             Number of questions: 
-                            <input type="number" max={128} min={2} step={2} className='num1'></input>
+                            <input type="number" max={128} min={1} step={1} className='num1'></input>
                         </p>
                         <p className='config'>
                             Difficulty: 
