@@ -1,5 +1,5 @@
 
-import Templates from './Templates'
+import Templates from './Template/Templates'
 import AccountPage from './Account/AccountPage'
 import './App.css'
 import MainPage from './MainPage/MainPage'
