@@ -1,5 +1,5 @@
 import './NavBarCSS.css';
-function NavBarCSS() {
+function NavBar() {
   
 
     return (
@@ -9,4 +9,4 @@ function NavBarCSS() {
     )
   }
   
-  export default NavBarCSS
+  export default NavBar
