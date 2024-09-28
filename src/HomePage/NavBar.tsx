@@ -1,5 +1,9 @@
 import './NavBarCSS.css';
 
+function NavBar() {
+  
+
+
 function Button({href}) {
     return (
         <>
@@ -32,4 +36,8 @@ function NavBarCSS() {
     )
   }
   
+
+  export default NavBar
+
   export default NavBarCSS
+
