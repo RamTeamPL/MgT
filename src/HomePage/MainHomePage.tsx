@@ -1,5 +1,4 @@
 import './MainHomePageCSS.css';
-import NavBar from './NavBar';
 import ShortAppInfo from './ShortAppInfo';
 import Image from './Image';
 import Info from './Info';
