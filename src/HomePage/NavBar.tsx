@@ -10,7 +10,7 @@ function Button({href}) {
 
 function Logo() {
     return (
-        <img src='krzak_trollface.png' />
+        <img src='MgTai.png' />
     );
 }
 
