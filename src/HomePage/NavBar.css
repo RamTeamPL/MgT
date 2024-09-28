@@ -1,12 +1,11 @@
 nav main {
     height: auto;
-    margin-top: 2vw;
     background-color: #333333;
     border-radius: 10px;
     min-width: 1020px;
     width: 50%;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin: 0 auto;
+    margin-top: 1em;
 }
 
 nav main img {
