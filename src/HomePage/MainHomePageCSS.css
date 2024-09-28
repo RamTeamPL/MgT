@@ -1,0 +1,30 @@
+#MainPageA1{
+    display:inline-block;
+    position: absolute;
+    top:340px;
+    text-align: center;
+    left: 40%;
+    border: 1px solid purple;
+    border-radius: 15%;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: purple;
+    text-decoration: none; 
+}
+
+#MainPageA2{
+    display:inline-block;
+    position: absolute;
+    top:340px;
+    text-align: center;
+    right: 40%;
+    border: 1px solid white;
+    border-radius: 15%;
+    height: 40px;
+    width: 130px;
+    color: black;
+    background-color: white;
+    text-decoration: none; 
+    
+}

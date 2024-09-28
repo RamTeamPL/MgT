@@ -1,6 +1,5 @@
 import './NavBar.css';
 
-
 function Logo() {
     return (
         <img src='MgTai.png' />
