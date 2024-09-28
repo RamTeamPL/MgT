@@ -1,6 +1,5 @@
 import './NavBarCSS.css';
 
-function NavBar() {
   
 
 
@@ -36,8 +35,6 @@ function NavBarCSS() {
     )
   }
   
-
-  export default NavBar
 
   export default NavBarCSS
 

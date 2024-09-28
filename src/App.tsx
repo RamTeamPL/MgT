@@ -15,9 +15,7 @@ function App() {
   return (
     <>
 
-      <MainHomePage/>
-
-        <NavBarCSS />
+        <MainHomePage/>
         <AccountPage />
 
     </>
