@@ -2,8 +2,9 @@ import { useState } from "react"
 import AccountPage from "../Account/AccountPage"
 import MainHomePage from "../HomePage/MainHomePage"
 import NavBar from "../HomePage/NavBar"
-import Templates from "../Templates";
+
 import Kontakt from "../HomePage/Kontakt";
+import Templates from "../Template/Templates";
 
 export enum Page {
     MainHomePage = 0,
