@@ -1,0 +1,69 @@
+nav main {
+    height: auto;
+    background-color: #333333;
+    border-radius: 10px;
+    min-width: 1020px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.navbutton {
+    display: inline;
+    flex:1;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbutton  a:hover + .podkreslenie {
+    transition: width 0.5s;
+    width: 4em;
+}
+
+
+.navbutton .podkreslenie {
+    pointer-events: none;
+    transition: width 0.25s;
+    width: 0em;
+    height: 4em;
+    position: absolute;
+    border-bottom: solid 2px red;
+}
+
+nav main #buttons a {
+    text-decoration: none;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+}
+
+nav main img {
+    height: 4em;
+    display: inline;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+}
+
+nav main #buttons {
+    height: 4em;
+    float:right;
+    display: inline-flex;
+    width: 80%;
+}
+
+nav main #buttons a:hover {
+    //border-bottom: 2px solid red;
+    margin-bottom: -2px;
+   // animation-name: button_highlight;
+    //animation-duration: 0.75s;
+}
+
+@keyframes button_highlight {
+    from {border-bottom-color: #FF000000;}
+    to {border-bottom-color: red;}
+}

@@ -1,15 +1,4 @@
-import './NavBarCSS.css';
-
-  
-
-
-function Button({href}) {
-    return (
-        <>
-            <a href={href}>Test</a>
-        </>
-    )
-}
+import './NavBar.css';
 
 function Logo() {
     return (
@@ -17,17 +6,27 @@ function Logo() {
     );
 }
 
-function NavBarCSS() {
+function NavButton({link, name}) {
+    return (
+        <div class="navbutton">
+            <a href={link}>{name}</a>
+            <div class="podkreslenie"></div>
+        </div>
+    )
+}
+
+function NavBar() {
     return (
       <>
         <nav>
             <main>
                 <Logo />
                 <div id="buttons">
-                    <Button href="patrykduda.com"/>
-                    <Button href="patrykduda.com"/>
-                    <Button href="patrykduda.com"/>
-                    <Button href="patrykduda.com"/>
+                    <NavButton link={"https://patrykduda.com"} name={"My quizzes"} />
+                    <NavButton link={"https://patrykduda.com"} name={"Made by others"}/>
+                    <NavButton link={"https://patrykduda.com"} name={"My results"}/>
+                    <NavButton link={"https://patrykduda.com"} name={"Create new quiz"}/>
+                    <NavButton link={"https://patrykduda.com"} name={"Buy premium"}/>
                 </div>
             </main>
         </nav>
@@ -35,6 +34,4 @@ function NavBarCSS() {
     )
   }
   
-
-  export default NavBarCSS
-
+  export default NavBar
