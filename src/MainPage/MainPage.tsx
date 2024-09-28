@@ -7,9 +7,16 @@ import Kontakt from "../HomePage/Kontakt";
 import Templates from "../Template/Templates";
 
 export enum Page {
+    None = 404,
     MainHomePage = 0,
     AccountPage,
     Templates,
+}
+
+function NoPage() {
+    return (
+        <h1>ERROR 404</h1>
+    )
 }
 
 
@@ -26,6 +33,7 @@ function MainPage() {
             }
             {
                 {
+                    404: <NoPage />,
                     0: <MainHomePage setPage={setPage}/>,
                     1: <AccountPage setLogged={setLogged}/>,
                     2: <Templates />
