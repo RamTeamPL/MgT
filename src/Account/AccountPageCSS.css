@@ -11,10 +11,27 @@
     padding-bottom: 100px;
 }
 
+
+@keyframes powiekszenie {
+    from { width: 80%; }
+    to { width: 85%; }
+}
+@keyframes zmniejszenie {
+    from { width: 85%; }
+    to { width: 80%; }
+}
+
+
+#loginpage button:hover {
+    transition: width 1s;
+    width: 85%;
+}
+
 #loginpage button {
+    transition: width 1s;
     width: 80%;
-    border-radius: 0;
     border: none;
+    border-radius: 10px;
     background-color: #AAFF00;
     background-image: url('../../krzak_trollface.png');
     background-repeat: no-repeat;
@@ -26,6 +43,7 @@
 }
 
 #loginpage input {
+    border-radius: 10px;
     height: 2em;
     width: 80%;
 }
