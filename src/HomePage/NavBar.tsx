@@ -1,4 +1,5 @@
 import './NavBar.css';
+import { Page } from '../MainPage/MainPage';
 
 function Logo() {
     return (
@@ -6,18 +7,27 @@ function Logo() {
     );
 }
 
-function NavBar() {
+function NavButton({setPage, page, name}) {
+    return (
+        <div class="navbutton">
+            <a onClick={() => {setPage(page)}} href="#">{name}</a>
+            <div class="podkreslenie"></div>
+        </div>
+    )
+}
+
+function NavBar({setPage}) {
     return (
       <>
         <nav>
             <main>
                 <Logo />
                 <div id="buttons">
-                    <a href="patrykduda.com">My quizzes</a>
-                    <a href="patrykduda.com">Made by others</a>
-                    <a href="patrykduda.com">My results</a>
-                    <a href="patrykduda.com">Create new quiz</a>
-                    <a href="patrykduda.com">Buy premium</a>
+                    <NavButton setPage={setPage} page={0} name={"My quizzes"} />
+                    <NavButton setPage={setPage} page={0} name={"Made by others"}/>
+                    <NavButton setPage={setPage} page={0} name={"My results"}/>
+                    <NavButton setPage={setPage} page={Page.Templates} name={"Create new quiz"}/>
+                    <NavButton setPage={setPage} page={Page.AccountPage} name={"Buy premium"}/>
                 </div>
             </main>
         </nav>
