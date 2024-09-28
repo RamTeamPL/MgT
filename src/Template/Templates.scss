@@ -1,46 +1,41 @@
-div#creator {
-    float:left;
-    width: 800px;
+div#all {
+    margin: auto;
+    width: 1600px;
 }
 
-h1 {
+div#creator {
+    width: 800px;
+    margin: auto;
+}
+
+h1.title01 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 40px;
+    text-align: center;
 }
 
-th {
+th.tab1 {
     font-size: 30px;
     font-weight: 200;
 }
 
-th span {
-    border: 1px solid white;
-    border-radius: 14px;
-    margin-left: 5px;
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
-    font-weight: 100;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-th, td {
+th.tab1, td.con {
     padding: 10px;
 }
 
-table {
+table.tab2 {
     width: 80%;
     margin: auto;
 }
 
-td#con {
+td.con {
     height: 100px;
     width: 600px;
 }
 
-textarea {
+textarea#area {
     border-radius: 10px;
 }
 
@@ -55,31 +50,31 @@ textarea {
     padding: 10px;
 }
 
-select {
+select.sel1 {
     margin-left: 75px;
     padding: 10px;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input[type=number] {
+input[type=number].num1 {
     font-size: 20px;
     padding: 5px;
     width: 60px;
 }
 
-// button {
-//     width: 200px;
-//     height: 50px;
-//     border-radius: 8px;
-//     background-color: rgb(23, 23, 23);
-//     font-size: 23px;
-//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-//     margin-top: 10px;
-//     border: 2px solid rgb(46, 46, 46);
-// }
+button.generate {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 23);
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    border: 2px solid rgb(46, 46, 46);
+}
 
-button:hover {
+button.generate:hover {
     background-color: rgb(53, 53, 53);
     cursor: pointer;
     border: 2px solid rgb(79, 79, 79);
@@ -92,9 +87,10 @@ div#result {
     float: left;
     border-radius: 10px;
     margin-top: 20px;
+    text-align: center;
 }
 
-h3 {
+h3.result1 {
     color: rgb(167, 167, 167);
     font-size: 20px;
     font-weight: 300;
@@ -107,7 +103,7 @@ h3 {
     color:black;
 }
 
-h4 {
+h4.config1 {
     margin: 5px;
     font-size: 30px;
     font-weight: 200;
@@ -121,4 +117,8 @@ h4 {
 .config input {
     padding: 10px;
     margin: 10px;
+}
+
+#configure {
+    text-align: center;
 }
