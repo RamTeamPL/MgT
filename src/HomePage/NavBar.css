@@ -56,12 +56,12 @@ nav main #buttons {
     width: 80%;
 }
 
-nav main #buttons a:hover {
+/* nav main #buttons a:hover {
     //border-bottom: 2px solid red;
     margin-bottom: -2px;
    // animation-name: button_highlight;
     //animation-duration: 0.75s;
-}
+} */
 
 @keyframes button_highlight {
     from {border-bottom-color: #FF000000;}
