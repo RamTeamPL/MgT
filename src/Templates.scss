@@ -1,0 +1,124 @@
+div#creator {
+    float:left;
+    width: 800px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+th {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+th span {
+    border: 1px solid white;
+    border-radius: 14px;
+    margin-left: 5px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+td#con {
+    height: 100px;
+    width: 600px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+#cont {
+    height: 200px;
+    min-height: 200px;
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 200px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+select {
+    margin-left: 75px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=number] {
+    font-size: 20px;
+    padding: 5px;
+    width: 60px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 23);
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    border: 2px solid rgb(46, 46, 46);
+}
+
+button:hover {
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+    border: 2px solid rgb(79, 79, 79);
+}
+
+div#result {
+    background-color: rgb(227, 227, 227);
+    width: 450px;
+    height: 700px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: rgb(167, 167, 167);
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+#res {
+    font-size: 20px;
+    color:black;
+}
+
+h4 {
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.config {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.config input {
+    padding: 10px;
+    margin: 10px;
+}

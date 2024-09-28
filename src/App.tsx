@@ -1,12 +1,13 @@
 
 import './App.css'
 
-import MainHomePage from './HomePage/MainHomePage'
+// import MainHomePage from './HomePage/MainHomePage'
 
 
 
-import NavBarCSS from './HomePage/NavBar'
-import AccountPage from './Account/AccountPage'
+// import NavBarCSS from './HomePage/NavBar'
+// import AccountPage from './Account/AccountPage'
+import Templates from './Templates'
 
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
   return (
     <>
 
-        <MainHomePage/>
-        <AccountPage />
+        {/* <MainHomePage/> */}
+        {/* <AccountPage /> */}
+        <Templates />
 
     </>
   )
