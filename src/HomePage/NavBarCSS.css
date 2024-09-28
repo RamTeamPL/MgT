@@ -1,0 +1,19 @@
+nav main {
+    width: 60vw;
+    margin: auto;
+}
+
+nav main #buttons {
+    display: flex;
+}
+
+nav main #buttons a {
+    flex:1;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav main #buttons a:hover {
+    border-bottom: 2px solid red;
+    margin-bottom: -2px;
+}
