@@ -12,8 +12,8 @@ function Box({src, opis}) {
 
 function MyQuizzes() {
     return (
-        <div>
-        <main>
+        <div >
+        <main class="box">
             <div id="quizzes">
                 <Box src="./src/assets/quiz1.jpg" opis="OPIS"/>
                 <Box src="./src/assets/quiz2.png" opis="OPIS"/>

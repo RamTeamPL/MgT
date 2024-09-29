@@ -5,7 +5,6 @@ function Box({src, opis}) {
     return (
         <div class="quizzTile">
             <img src={src}/><br/>
-            <hr/>
             <span>{opis}</span>
         </div>
     )
@@ -14,7 +13,7 @@ function Box({src, opis}) {
 function OthersQuiz() {
     return (
         <div>
-        <main>
+        <main class="box">
             <div id="quizzes">
                 <Box src="./src/assets/quiz2.png" opis="OPIS"/>
                 <Box src="./src/assets/quiz3.png" opis="OPIS"/>
