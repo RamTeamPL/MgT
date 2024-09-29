@@ -49,6 +49,7 @@ nav main img {
     align-items: center;
     justify-content: center;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 nav main #buttons {
