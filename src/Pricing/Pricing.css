@@ -1,4 +1,10 @@
-#pricing img {
-    width: 100%;
-    height: 700px;
+
+#pricing {
+    margin-left: 15vw;
+    padding: 1em;
+    width: 30vw;
+    text-align: center;
+    border: #afafaf solid 1px;
+    border-radius: 10px;
+    text-align: center;
 }

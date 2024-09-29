@@ -1,6 +1,20 @@
 import './Pricing.css'
-import '../srodekCSS.css'
 import { useState } from 'react';
+
+function Benefity() {
+    return (
+        <>
+            <span>Plusy ktore </span>
+            <ul>
+                <li>Dupa andrzeja</li>
+                <li>TANIA CENA</li>
+                <li>Dupa Weroniki</li>
+                <li>TANIE JAK U PIOTRA</li>
+                <li>99,999999% uptime</li>
+            </ul>
+        </>
+    )
+}
 
 
 function Pricing() {
@@ -18,6 +32,7 @@ function Pricing() {
     return (
         <main>
         <div id="pricing">
+            <Benefity />
             <p>Cena za miesiac: {cena}zł</p>
             <span>Wymiar: </span>
             <select onChange={oblicz}>
