@@ -3,7 +3,7 @@ import '../srodekCSS.css'
 
 function Box({src, opis}) {
     return (
-        <div class="quizzTile">
+        <div className="quizzTile">
             <img src={src}/><br/>
             <span>{opis}</span>
         </div>
@@ -13,7 +13,7 @@ function Box({src, opis}) {
 function OthersQuiz() {
     return (
         <div>
-        <main class="box">
+        <main className="box">
             <div id="quizzes">
                 <Box src="./src/assets/quiz2.png" opis="OPIS"/>
                 <Box src="./src/assets/quiz3.png" opis="OPIS"/>
