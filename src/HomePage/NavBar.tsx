@@ -9,9 +9,9 @@ function Logo({setPage, setLogged}) {
 
 function NavButton({setPage, page, name}) {
     return (
-        <div class="navbutton">
+        <div className="navbutton">
             <a onClick={() => {setPage(page)}} href="#">{name}</a>
-            <div class="podkreslenie"></div>
+            <div className="podkreslenie"></div>
         </div>
     )
 }
@@ -26,7 +26,7 @@ function NavBar({setPage, setLogged}) {
                     <NavButton setPage={setPage} page={Page.MyQuizzes} name={"My quizzes"} />
                     <NavButton setPage={setPage} page={Page.OthersQuiz} name={"Made by others"}/>
                     <NavButton setPage={setPage} page={Page.UserResults} name={"My results"}/>
-                    <NavButton setPage={setPage} page={Page.Templates} name={"Create new quiz"}/>
+                    <NavButton setPage={setPage} page={Page.Templates} name={"Create a new quiz"}/>
                     <NavButton setPage={setPage} page={Page.Pricing} name={"Prices"}/>
                 </div>
             </main>

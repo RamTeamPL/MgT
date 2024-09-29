@@ -16,6 +16,22 @@ function Benefity() {
     )
 }
 
+<<<<<<< Updated upstream
+=======
+function THEPRICE({cena}) {
+    return (
+        <>
+            <p id="cena">
+                <span className="star">⭐</span>
+                {cena}zł
+                <span className="star">⭐</span>
+            </p>
+        </>
+    )
+}
+
+
+>>>>>>> Stashed changes
 
 function Pricing() {
     let [cena, setCena] = useState("0");
@@ -36,6 +52,10 @@ function Pricing() {
             <p>Cena za miesiac: {cena}zł</p>
             <span>Wymiar: </span>
             <select onChange={oblicz}>
+<<<<<<< Updated upstream
+=======
+                <option disabled selected value=""> -- WYBIERZ --</option>
+>>>>>>> Stashed changes
                 <option value="month">Miesięczny</option>
                 <option value="roczny">Roczny</option>
             </select>
