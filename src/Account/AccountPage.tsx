@@ -1,4 +1,5 @@
 import './AccountPageCSS.css';
+import { Page } from '../MainPage/MainPage';
 
 function LoginInput() {
     return (
@@ -19,7 +20,7 @@ function PasswordInput() {
 }
 
 
-function AccountPage({setLogged}) {
+function AccountPage({setLogged, setPage}) {
     return (
       <>
         <div id="loginpage">
@@ -33,7 +34,7 @@ function AccountPage({setLogged}) {
 
             <LoginInput /><br/>
             <PasswordInput/><br />
-            <button onClick={() => {setLogged(true)}} id = "login">Login</button>
+            <button onClick={() => {setLogged(true); setPage(Page.MyQuizzes)}} id = "login">Login</button>
 
         </div>
       </>
