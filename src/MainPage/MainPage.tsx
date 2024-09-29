@@ -7,6 +7,7 @@ import Kontakt from "../HomePage/Kontakt";
 import Templates from "../Template/Templates";
 import MyQuizzes from "../MyQuizzes/MyQuizzes";
 import Pricing from "../Pricing/Pricing";
+import OthersQuiz from "../OthersQuiz/OthersQuiz";
 
 export enum Page {
     None = 404,
@@ -15,6 +16,7 @@ export enum Page {
     Templates,
     MyQuizzes,
     Pricing,
+    OthersQuiz,
 }
 
 function NoPage() {
@@ -43,6 +45,7 @@ function MainPage() {
                     2: <Templates />,
                     3: <MyQuizzes />,
                     4: <Pricing />,
+                    5: <OthersQuiz />,
                 }[page]
             }
             <Kontakt />
