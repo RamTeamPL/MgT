@@ -43,7 +43,7 @@ function MainPage() {
                 {
                     404: <NoPage />,
                     0: <MainHomePage setPage={setPage}/>,
-                    1: <AccountPage setLogged={setLogged}/>,
+                    1: <AccountPage setLogged={setLogged} setPage={setPage}/>,
                     2: <Templates />,
                     3: <MyQuizzes />,
                     4: <Pricing />,
