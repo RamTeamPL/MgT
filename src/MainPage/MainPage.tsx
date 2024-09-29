@@ -45,10 +45,10 @@ function MainPage() {
                     0: <MainHomePage setPage={setPage}/>,
                     1: <AccountPage setLogged={setLogged}/>,
                     2: <Templates />,
-                    6: <UserResults />,
                     3: <MyQuizzes />,
                     4: <Pricing />,
                     5: <OthersQuiz />,
+                    6: <UserResults />,
                 }[page]
             }
             <Kontakt />

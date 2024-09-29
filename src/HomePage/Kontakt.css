@@ -1,6 +1,13 @@
+body {
+    margin-bottom: calc( 2em + 20px + 2em );
+}
+
 footer {
+    text-align: center;
     width: 100%;
-    background-color: gray;
+    padding: 1em;
+    font-size: 20px;
+    background-color: #202020;
     position: fixed;
     bottom: 0;
 }
