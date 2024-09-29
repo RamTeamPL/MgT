@@ -23,7 +23,7 @@ function NavBar({setPage, setLogged}) {
             <main>
                 <Logo setPage={setPage} setLogged={setLogged}/>
                 <div id="buttons">
-                    <NavButton setPage={setPage} page={Page.MyQuizzes} name={"My quizzes"} />
+                    <NavButton setPage={setPage} page={Page.LoadingScreen} name={"My quizzes"} />
                     <NavButton setPage={setPage} page={Page.OthersQuiz} name={"Made by others"}/>
                     <NavButton setPage={setPage} page={Page.UserResults} name={"My results"}/>
                     <NavButton setPage={setPage} page={Page.Templates} name={"Create new quiz"}/>

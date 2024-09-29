@@ -34,7 +34,7 @@ function AccountPage({setLogged, setPage}) {
 
             <LoginInput /><br/>
             <PasswordInput/><br />
-            <button onClick={() => {setLogged(true); setPage(Page.MyQuizzes)}} id = "login">Login</button>
+            <button onClick={() => {setLogged(true); setPage(Page.LoadingScreen)}} id = "login">Login</button>
 
         </div>
       </>
