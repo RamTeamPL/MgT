@@ -1,11 +1,11 @@
 import './MyQuizzes.css'
 import '../srodekCSS.css'
 
-function Box({src, opis}) {
+function Box({src, description}) {
     return (
         <div className="quizzTile">
             <img src={src}/><br/>
-            <span>{opis}</span>
+            <span>{description}</span>
         </div>
     )
 }
@@ -15,35 +15,34 @@ function MyQuizzes() {
         <div >
         <main className="box">
             <div id="quizzes">
-                <Box src="./src/assets/quiz1.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz2.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./src/assets/quiz3.png" opis="OPIS"/>
-                <Box src="./src/assets/quiz4.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz5.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz6.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz7.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz8.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz10.jpg" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./src/assets/quiz8.jpg" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./src/assets/quiz5.jpg" opis="OPIS"/>
-                <Box src="./src/assets/quiz6.jpg" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./src/assets/quiz2.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./src/assets/quiz3.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
-                <Box src="./krzak_trollface.png" opis="OPIS"/>
+                <Box src="./src/assets/quiz6.jpg" description="description"/>
+                <Box src="./src/assets/quiz5.jpg" description="description"/>
+                <Box src="./src/assets/quiz10.jpg" description="description"/>
+                <Box src="./src/assets/quiz2.png" description="description"/>
+                <Box src="./src/assets/quiz7.jpg" description="description"/>
+                <Box src="./src/assets/quiz6.jpg" description="description"/>
+                <Box src="./src/assets/quiz3.png" description="description"/>
+                <Box src="./src/assets/quiz5.jpg" description="description"/>
+                <Box src="./src/assets/quiz2.png" description="description"/>
+                <Box src="./src/assets/quiz1.jpg" description="description"/>
+                <Box src="./src/assets/quiz8.jpg" description="description"/>
+                <Box src="./src/assets/quiz4.jpg" description="description"/>
+                <Box src="./src/assets/quiz8.jpg" description="description"/>
+                <Box src="./src/assets/quiz3.png" description="description"/>
+                <Box src="./src/assets/quiz3.png" description="description"/>
+                <Box src="./src/assets/quiz5.jpg" description="description"/>
+                <Box src="./src/assets/quiz7.jpg" description="description"/>
+                <Box src="./src/assets/quiz4.jpg" description="description"/>
+                <Box src="./src/assets/quiz10.jpg" description="description"/>
+                <Box src="./src/assets/quiz2.png" description="description"/>
+                <Box src="./src/assets/quiz6.jpg" description="description"/>
+                <Box src="./src/assets/quiz3.png" description="description"/>
+                <Box src="./src/assets/quiz6.jpg" description="description"/>
+                <Box src="./src/assets/quiz5.jpg" description="description"/>
+                <Box src="./src/assets/quiz1.jpg" description="description"/>
+                <Box src="./src/assets/quiz8.jpg" description="description"/>
+                <Box src="./src/assets/quiz8.jpg" description="description"/>
+                <Box src="./src/assets/quiz2.png" description="description"/>
             </div>
         </main>
         </div>
