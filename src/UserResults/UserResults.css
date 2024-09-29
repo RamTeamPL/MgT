@@ -10,7 +10,9 @@
     margin-top: 10px;
     border-collapse: collapse;
     border-radius: 10px;
+    text-decoration: none;
 }
+
 
 .firstField{
     min-width: 400px;
@@ -21,4 +23,18 @@
     margin: 0 auto;
     width: 50%;
     margin-top: 20px;
+}
+
+#UserResults tr a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#UserResults tr a:hover{
+    opacity: 0.8;
+}
+
+#UserResults tr a:active{
+    opacity: 0.5;
 }

@@ -56,43 +56,43 @@ function UserResults() {
       "grade": 1,
       "points": "3/20",
       "href": "#"
-  },
-  {
-      "quizSubject": "Quiz subject",
-      "grade": 2,
-      "points": "9/20",
-      "href": "#"
-  },
-  {
-      "quizSubject": "Quiz subject",
-      "grade": 3,
-      "points": "12/20",
-      "href": "#"
-  },
-  {
-      "quizSubject": "Quiz subject",
-      "grade": 4,
-      "points": "17/20",
-      "href": "#"
-  },
-  {
-      "quizSubject": "Quiz subject",
-      "grade": 1,
-      "points": "3/20",
-      "href": "#"
-  },
-  {
-      "quizSubject": "Quiz subject",
-      "grade": 2,
-      "points": "9/20",
-      "href": "#"
-  },
-  {
-      "quizSubject": "Quiz subject",
-      "grade": 3,
-      "points": "12/20",
-      "href": "#"
-  },
+    },
+    {
+        "quizSubject": "Quiz subject",
+        "grade": 2,
+        "points": "9/20",
+        "href": "#"
+    },
+    {
+        "quizSubject": "Quiz subject",
+        "grade": 3,
+        "points": "12/20",
+        "href": "#"
+    },
+    {
+        "quizSubject": "Quiz subject",
+        "grade": 4,
+        "points": "17/20",
+        "href": "#"
+    },
+    {
+        "quizSubject": "Quiz subject",
+        "grade": 1,
+        "points": "3/20",
+        "href": "#"
+    },
+    {
+        "quizSubject": "Quiz subject",
+        "grade": 2,
+        "points": "9/20",
+        "href": "#"
+    },
+    {
+        "quizSubject": "Quiz subject",
+        "grade": 3,
+        "points": "12/20",
+        "href": "#"
+    },
   ]
 
   return (

@@ -19,9 +19,9 @@ function THEPRICE({cena}) {
     return (
         <>
             <p id="cena">
-                <span class="star">⭐</span>
+                <span className="star">⭐</span>
                 {cena}zł
-                <span class="star">⭐</span>
+                <span className="star">⭐</span>
             </p>
         </>
     )

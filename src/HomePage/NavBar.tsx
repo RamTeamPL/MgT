@@ -9,9 +9,9 @@ function Logo({setPage, setLogged}) {
 
 function NavButton({setPage, page, name}) {
     return (
-        <div class="navbutton">
+        <div className="navbutton">
             <a onClick={() => {setPage(page)}} href="#">{name}</a>
-            <div class="podkreslenie"></div>
+            <div className="podkreslenie"></div>
         </div>
     )
 }
