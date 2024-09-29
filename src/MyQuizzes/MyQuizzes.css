@@ -1,16 +1,17 @@
 #quizzes {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2em;
+    gap: 1em;
 }
 
 .quizzTile {
-    padding: 7px;
+    padding: 3px;
     cursor: pointer;
     height: fit-content;
-    width: 27%;
-    border: 2px solid #0a0a0a;
+    width: fit-content;
+    border: 1px solid #0a0a0a;
     background-color: #202020;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #0a0a0a;
@@ -29,6 +30,6 @@
 
 .quizzTile img {
     border-radius: 10px;
-    width: 100%;
-    height: 80%;
+    width: 15em;
+    height: 15em;
 }
