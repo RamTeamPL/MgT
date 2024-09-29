@@ -4,14 +4,11 @@ import { useState } from 'react';
 function Benefity() {
     return (
         <>
-            <h1>Plusy ktore </h1>
+            <h1>Subscription </h1>
             <div>
             <ul>
-                <li>Dupa andrzeja</li>
-                <li>TANIA CENA</li>
-                <li>Dupa Weroniki</li>
-                <li>TANIE JAK U PIOTRA</li>
-                <li>99,999999% uptime</li>
+                <li>Dostęp do wszystkich funkcji</li>
+                <li>Wsparcie twórców</li>
             </ul>
             </div>
         </>
