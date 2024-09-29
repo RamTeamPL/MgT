@@ -1,13 +1,23 @@
+#MainPage {
+    border: 1px solid #404040;
+    border-radius: 10px;
+    background-color: #202020;
+    padding: 10px;
+    margin: 100px;
+}
+
 #MainPageA1{
+    float: right;
+    margin-right: 10em;
     display:inline-block;
     top:340px;
     text-align: center;
     left: 40%;
     border: 1px solid purple;
     border-radius: 15%;
-    height: 40px;
     width: 130px;
     color: white;
+    width: fit-content;
     background-color: purple;
     text-decoration: none; 
 }

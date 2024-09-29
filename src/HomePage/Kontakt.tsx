@@ -4,7 +4,7 @@ function Kontakt() {
     return (
         <>
             <footer>
-                fds
+                Kontakt: +48 883 291 532
             </footer>
         </>
     )
