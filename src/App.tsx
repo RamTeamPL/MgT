@@ -1,9 +1,8 @@
 
 import AccountPage from './Account/AccountPage'
 import './App.css'
-// import MainHomePage from './HomePage/MainHomePage'
+import MainHomePage from './HomePage/MainHomePage'
 import NavBar from './HomePage/NavBar'
-// import AccountPage from './Account/AccountPage'
 
 function App() {
   
@@ -12,8 +11,8 @@ function App() {
     <>
         <NavBar />
         <AccountPage/>
-        {/* <MainHomePage/>
-        <AccountPage /> */}
+        <MainHomePage/>
+        <AccountPage />
     </>
   )
 }
