@@ -12,9 +12,10 @@ function MainHomePage({setPage}) {
       <div id='MainPage'>
         <ShortAppInfo/>
         
+
         <button onClick={()=>{setPage(Page.AccountPage)}} id='MainPageA1'>Zaloguj się</button>
 
-        <Image img={'./cos.png'}/>
+        <Image img={'./src/assets/subwaysurfers-marcomasri.gif'}/>
         <Info/>
       </div>
       </main>
