@@ -8,16 +8,16 @@ function MainHomePage({setPage}) {
     
 
     return (
-      <div id='MainPage'>
       <main>
+      <div id='MainPage'>
         <ShortAppInfo/>
         
         <button onClick={()=>{setPage(Page.AccountPage)}} id='MainPageA1'>Zaloguj się</button>
 
         <Image img={'./cos.png'}/>
         <Info/>
-      </main>
       </div>
+      </main>
     )
   }
   
