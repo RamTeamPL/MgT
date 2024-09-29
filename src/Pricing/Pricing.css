@@ -1,5 +1,7 @@
 
 #pricing {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 15px;
     margin-left: 15vw;
     padding: 1em;
     width: 30vw;
@@ -7,4 +9,39 @@
     border: #afafaf solid 1px;
     border-radius: 10px;
     text-align: center;
+    background-color: #3a3a3a;
+}
+
+#pricing h1 {
+    color: magenta;
+}
+
+#pricing div {
+    margin-left: 25%;
+    text-align: left;
+}
+
+#pricing div ul li {
+   list-style-type: '→ '; 
+}
+
+#cena {
+    color: magenta;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#cena .star {
+    animation: wow 1.5s, wow-2 1.7s ease-in-out;
+    animation-duration: 0.3s;
+    display: inline-block;
+}
+
+@keyframes wow {
+    from {transform: translateX(0px) translateY(0px) scale(1);}
+    to {transform: translateX(10px) translateY(-2000px) scale(0.5);}
+}
+
+@keyframes wow-2 {
+    to {transform: translateX(50px) translateY(-10px) scale(0);}
 }
