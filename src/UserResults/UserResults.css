@@ -1,0 +1,24 @@
+#UserResults table{
+    margin:0;
+    width: 100%;
+}
+
+#UserResults tr,th,td{
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.firstField{
+    min-width: 400px;
+    height: auto;
+}
+
+#UserResults{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+}
