@@ -34,7 +34,7 @@ function MainPage() {
         <>
             {
                 isLogged ? 
-                    <NavBar setPage={setPage}/> :
+                    <NavBar setPage={setPage} setLogged={setLogged}/> :
                     ""
             }
             {

@@ -47,6 +47,7 @@ nav main img {
     width: 10em;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 nav main #buttons {

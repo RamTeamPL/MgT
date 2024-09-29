@@ -1,9 +1,9 @@
 import './NavBar.css';
 import { Page } from '../MainPage/MainPage';
 
-function Logo() {
+function Logo({setPage, setLogged}) {
     return (
-        <img src='MgTai.png' />
+        <img src='MgTai.png' onClick={()=>{setPage(Page.MainHomePage); setLogged(false)}}/>
     );
 }
 
@@ -16,12 +16,12 @@ function NavButton({setPage, page, name}) {
     )
 }
 
-function NavBar({setPage}) {
+function NavBar({setPage, setLogged}) {
     return (
       <>
         <nav>
             <main>
-                <Logo />
+                <Logo setPage={setPage} setLogged={setLogged}/>
                 <div id="buttons">
                     <NavButton setPage={setPage} page={Page.MyQuizzes} name={"My quizzes"} />
                     <NavButton setPage={setPage} page={Page.OthersQuiz} name={"Made by others"}/>
