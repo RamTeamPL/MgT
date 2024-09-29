@@ -1,6 +1,8 @@
 import './Templates.scss'
+import { Quiz } from '../Quiz/quiz'
+import { Page } from '../MainPage/MainPage'
 
-function Templates()
+function Templates({setPage})
 {
     return (
         <>
@@ -29,7 +31,7 @@ function Templates()
                                 <option value="hard">Hard</option>
                             </select>
                         </p>
-                        <button className='generate'><span id="butt">Generate quiz</span></button>
+                        <button className='generate' href="#" onClick={() => {setPage(Page.Quiz)}}><span id="butt">Generate quiz</span></button>
                     </div>
                     </form>
 

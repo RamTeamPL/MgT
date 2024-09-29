@@ -1,8 +1,6 @@
-import { useState } from "react";
-import "./Test.css";
-import axios from "axios";
+import "./quiz.css";
 
-export function Test() {
+export function Quiz() {
   interface QuizQuestion {
     question: string;
     answerA: string;
@@ -95,61 +93,59 @@ export function Test() {
     },
   ];
 
-  const [getQuestions, setQuestions] = useState<QuizQuestion[]>([]);
+  // const [getQuestions, setQuestions] = useState<QuizQuestion[]>([]);
 
-  async function generateText() {
-    try {
-      const response = await axios.post(
-        "http://localhost:11434/api/generate",
-        {
-          model: "mistral",
-          prompt: `napisz 2 pytań na temat 2 wojny światowej w formacie: {
-    "question": "cos tam?",
-    "answerA": "cosA",
-    "answerB": "cosB",
-    "answerC": "cosC",
-    "answerD": "cosD",
-    "correctAnswer": "C"}`,
-          stream: false,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+  // async function generateText() {
+  //   try {
+  //     const response = await axios.post(
+  //       "http://localhost:11434/api/generate",
+  //       {
+  //         model: "mistral",
+  //         prompt: `napisz 2 pytań na temat 2 wojny światowej w formacie: {
+  //   "question": "cos tam?",
+  //   "answerA": "cosA",
+  //   "answerB": "cosB",
+  //   "answerC": "cosC",
+  //   "answerD": "cosD",
+  //   "correctAnswer": "C"}`,
+  //         stream: false,
+  //       },
+  //       {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       }
+  //     );
 
-      quizQuestions = response.data.response;
-      setQuestions(response.data.response);
-      console.log(getQuestions);
-    } catch (error) {
-      if (axios.isAxiosError(error)) {
-        console.error(
-          "Błąd podczas wysyłania żądania:",
-          error.response?.data || error.message
-        );
-      } else {
-        console.error("Nieznany błąd:", error);
-      }
-    }
-  }
+  //     quizQuestions = response.data.response;
+  //     setQuestions(response.data.response);
+  //     console.log(getQuestions);
+  //   } catch (error) {
+  //     if (axios.isAxiosError(error)) {
+  //       console.error(
+  //         "Błąd podczas wysyłania żądania:",
+  //         error.response?.data || error.message
+  //       );
+  //     } else {
+  //       console.error("Nieznany błąd:", error);
+  //     }
+  //   }
+  // }
 
-  const GenerateQuestions = () => {
-    quizQuestions.map((question) => (
-      <>
-        {console.log(question.question)}
-        <div>
-          <h1>{question.question}</h1>
-        </div>
-      </>
-    ));
-  };
+  // const GenerateQuestions = () => {
+  //   quizQuestions.map((question) => (
+  //     <>
+  //       {console.log(question.question)}
+  //       <div>
+  //         <h1>{question.question}</h1>
+  //       </div>
+  //     </>
+  //   ));
+  // };
 
   return (
     <>
-      <button onClick={generateText}>generuj</button>
-
-      {getQuestions}
+      
 
       {quizQuestions.map((question) => {
         return (
