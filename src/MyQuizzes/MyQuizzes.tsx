@@ -5,7 +5,6 @@ function Box({src, opis}) {
     return (
         <div class="quizzTile">
             <img src={src}/><br/>
-            <hr/>
             <span>{opis}</span>
         </div>
     )
