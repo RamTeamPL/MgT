@@ -1,22 +1,24 @@
 import './MainHomePageCSS.css';
-import NavBar from './NavBar';
+import '../srodekCSS.css'
 import ShortAppInfo from './ShortAppInfo';
 import Image from './Image';
 import Info from './Info';
-function MainHomePage() {
+import { Page } from '../MainPage/MainPage';
+function MainHomePage({setPage}) {
     
 
     return (
+      <main>
       <div id='MainPage'>
-        <NavBar/>
         <ShortAppInfo/>
         
-        <a href='' id='MainPageA1'>Zaloguj się</a>
-        <a href='.contact' id='MainPageA2'>Kontakt</a>
 
-        <Image img={'./cos.png'}/>
+        <button onClick={()=>{setPage(Page.AccountPage)}} id='MainPageA1'>Zaloguj się</button>
+
+        <Image img={'./src/assets/subwaysurfers-marcomasri.gif'}/>
         <Info/>
       </div>
+      </main>
     )
   }
   

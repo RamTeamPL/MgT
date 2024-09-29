@@ -1,9 +1,10 @@
 import './AccountPageCSS.css';
+import { Page } from '../MainPage/MainPage';
 
 function LoginInput() {
     return (
-        <div>
-            <span id="acclog">Login: </span><br/>
+        <div className="inputFields">
+            <span id="acclog">Username: </span><br/>
             <input type='text' />
         </div>
     )
@@ -11,7 +12,7 @@ function LoginInput() {
 
 function PasswordInput() {
     return (
-        <div>
+        <div className="inputFields">
             <span id="accpass">Password: </span><br/>
             <input type='password' /><br/>
         </div>
@@ -19,13 +20,22 @@ function PasswordInput() {
 }
 
 
-function AccountPage() {
+function AccountPage({setLogged, setPage}) {
     return (
       <>
         <div id="loginpage">
+            <h1>Log in</h1>
+            <img src="MgTai.png" alt="logo"/><br />
+            <button className='loginVia'>
+                <img src="googleIcon.png" alt="" />
+                <span>Log in using Google account</span>
+            </button><br />
+            <hr />
+
             <LoginInput /><br/>
             <PasswordInput/><br />
-            <button>LOG in</button>
+            <button onClick={() => {setLogged(true); setPage(Page.MyQuizzes)}} id = "login">Login</button>
+
         </div>
       </>
     )

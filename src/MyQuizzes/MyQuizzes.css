@@ -1,0 +1,42 @@
+#quizzes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.quizzTile {
+    padding: 3px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #0a0a0a;
+    transition: transform 0.5s, box-shadow 0.7s;
+    text-align: center;
+}
+
+.quizzTile:hover {
+    box-shadow: 5px 10px 5px 5px #0a0a0a;
+    transform: scale(1.05) translate(-10px, -10px);
+    transition: transform 0.7s, box-shadow 1.0s;
+}
+
+.quizzTile span {
+    margin: 20px;
+}
+
+.quizzTile img {
+    border-radius: 10px 10px 2px 2px;
+    width: 13em;
+    height: 13em;
+    opacity: 0.8;
+}
+
+
+.box{
+    width: 50%;
+    margin: 0 auto;
+}

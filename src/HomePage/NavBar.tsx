@@ -1,23 +1,33 @@
 import './NavBar.css';
+import { Page } from '../MainPage/MainPage';
 
-function Logo() {
+function Logo({setPage, setLogged}) {
     return (
-        <img src='MgTai.png' />
+        <img src='MgTai.png' onClick={()=>{setPage(Page.MainHomePage); setLogged(false)}}/>
     );
 }
 
-function NavBar() {
+function NavButton({setPage, page, name}) {
+    return (
+        <div class="navbutton">
+            <a onClick={() => {setPage(page)}} href="#">{name}</a>
+            <div class="podkreslenie"></div>
+        </div>
+    )
+}
+
+function NavBar({setPage, setLogged}) {
     return (
       <>
         <nav>
             <main>
-                <Logo />
+                <Logo setPage={setPage} setLogged={setLogged}/>
                 <div id="buttons">
-                    <a href="patrykduda.com">My quizzes</a>
-                    <a href="patrykduda.com">Made by others</a>
-                    <a href="patrykduda.com">My results</a>
-                    <a href="patrykduda.com">Create new quiz</a>
-                    <a href="patrykduda.com">Buy premium</a>
+                    <NavButton setPage={setPage} page={Page.MyQuizzes} name={"My quizzes"} />
+                    <NavButton setPage={setPage} page={Page.OthersQuiz} name={"Made by others"}/>
+                    <NavButton setPage={setPage} page={Page.UserResults} name={"My results"}/>
+                    <NavButton setPage={setPage} page={Page.Templates} name={"Create new quiz"}/>
+                    <NavButton setPage={setPage} page={Page.Pricing} name={"Prices"}/>
                 </div>
             </main>
         </nav>
