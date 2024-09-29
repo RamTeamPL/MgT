@@ -1,6 +1,7 @@
 #loadingscreen {
     text-align: center;
     align-items: center;
+    margin-top: 10vh;
 }
 
 #loadingscreen img{

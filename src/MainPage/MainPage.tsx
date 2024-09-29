@@ -46,7 +46,7 @@ function MainPage() {
           4: <Pricing />,
           5: <OthersQuiz />,
           6: <UserResults />,
-          7: <LoadingScreen setPage={setPage} />,
+          7: <LoadingScreen setLogged={setLogged} setPage={setPage} />,
           8: <Quiz />
         }[page]
       }

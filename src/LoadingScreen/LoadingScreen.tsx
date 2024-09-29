@@ -3,14 +3,16 @@ import './LoadingScreen.css'
 import { Page } from '../MainPage/MainPage';
 
 
-function LoadingScreen({setPage}) {
+function LoadingScreen({setPage, setLogged}) {
     let [dots, setDots] = useState(".");
     let dotCount = 1;
+    setLogged(false);
 
     useEffect(() => {
         setTimeout(() => {
-            setPage(Page.MyQuizzes)
-        }, Math.random() * 2000 + 1000)
+            setPage(Page.MyQuizzes);
+            setLogged(true);
+        }, Math.random() * 1000 + 1000)
         setInterval(() => {
             if (dotCount >= 4) dotCount = 1;
             dotCount++;
