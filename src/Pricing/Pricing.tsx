@@ -34,9 +34,11 @@ function Pricing() {
     let oblicz = (e) => {
         switch (e.target.value) {
             case "month":
+                document.querySelector("#pricing").style = "background-color: rgb(20, 20, 20);";
                 setCena("19.99")
                 break;
             case "roczny":
+                document.querySelector("#pricing").style = "background-color: #78620A";
                 setCena("7.70")
         }
     }
