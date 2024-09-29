@@ -25,7 +25,7 @@ function NavBar({setPage}) {
                 <div id="buttons">
                     <NavButton setPage={setPage} page={Page.None} name={"My quizzes"} />
                     <NavButton setPage={setPage} page={Page.None} name={"Made by others"}/>
-                    <NavButton setPage={setPage} page={Page.None} name={"My results"}/>
+                    <NavButton setPage={setPage} page={Page.UserResults} name={"My results"}/>
                     <NavButton setPage={setPage} page={Page.Templates} name={"Create new quiz"}/>
                     <NavButton setPage={setPage} page={Page.None} name={"Prices"}/>
                 </div>
