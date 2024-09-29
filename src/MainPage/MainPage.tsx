@@ -9,6 +9,7 @@ import UserResults from "../UserResults/UserResults";
 import MyQuizzes from "../MyQuizzes/MyQuizzes";
 import Pricing from "../Pricing/Pricing";
 import OthersQuiz from "../OthersQuiz/OthersQuiz";
+import LoadingScreen from "../LoadingScreen/LoadingScreen";
 
 export enum Page {
     None = 404,
@@ -19,6 +20,7 @@ export enum Page {
     Pricing,
     OthersQuiz,
     UserResults,
+    LoadingScreen,
 }
 
 function NoPage() {
@@ -49,6 +51,7 @@ function MainPage() {
                     4: <Pricing />,
                     5: <OthersQuiz />,
                     6: <UserResults />,
+                    7: <LoadingScreen setPage={setPage}/>
                 }[page]
             }
             <Kontakt />

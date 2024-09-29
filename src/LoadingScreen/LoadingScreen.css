@@ -1,0 +1,15 @@
+#loadingscreen {
+    text-align: center;
+    align-items: center;
+}
+
+#loadingscreen img{
+    width: 60vw;
+    height: 50vh;
+}
+
+#loadingscreen span {
+    width: 100%;
+    height: 20vh;
+    font-size: 7em;
+}
