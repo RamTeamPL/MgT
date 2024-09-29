@@ -29,7 +29,7 @@ function Templates()
                                 <option value="hard">Hard</option>
                             </select>
                         </p>
-                        <button className='generate'><span id="butt">Wygeneruj quiz</span></button>
+                        <button className='generate'><span id="butt">Generate quiz</span></button>
                     </div>
                     </form>
 
