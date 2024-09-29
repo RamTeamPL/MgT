@@ -1,4 +1,5 @@
-//import './MainHomePageCSS.css';
+import './MainHomePageCSS.css';
+import '../srodekCSS.css'
 import ShortAppInfo from './ShortAppInfo';
 import Image from './Image';
 import Info from './Info';
@@ -7,6 +8,7 @@ function MainHomePage({setPage}) {
     
 
     return (
+      <main>
       <div id='MainPage'>
         <ShortAppInfo/>
         
@@ -15,6 +17,7 @@ function MainHomePage({setPage}) {
         <Image img={'./cos.png'}/>
         <Info/>
       </div>
+      </main>
     )
   }
   
